@@ -19,7 +19,7 @@ class SalaryCalculatorTest extends BaseIOTest {
 
         calculator.calculateSalary(5000);
 
-        assertEquals("4250\n", updateLineSpliterators(outContent.toString()));
+        assertEquals("4250.0\n", updateLineSpliterators(outContent.toString()));
     }
 
     @Test
@@ -28,7 +28,7 @@ class SalaryCalculatorTest extends BaseIOTest {
 
         calculator.calculateSalary(15000);
 
-        assertEquals("12300\n", updateLineSpliterators(outContent.toString()));
+        assertEquals("12300.0\n", updateLineSpliterators(outContent.toString()));
     }
 
     @Test
@@ -37,7 +37,7 @@ class SalaryCalculatorTest extends BaseIOTest {
 
         calculator.calculateSalary(35000);
 
-        assertEquals("28000\n", updateLineSpliterators(outContent.toString()));
+        assertEquals("28000.0\n", updateLineSpliterators(outContent.toString()));
     }
 
     @Test

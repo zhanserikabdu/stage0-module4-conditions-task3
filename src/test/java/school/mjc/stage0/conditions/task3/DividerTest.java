@@ -11,7 +11,7 @@ class DividerTest extends BaseIOTest {
     void isDividableBy5And11WhenDividable() {
         Divider divider = new Divider();
 
-        divider.isDividableBy5And11(66);
+        divider.isDividableBy5And11(55);
 
         assertEquals("Dividable\n", updateLineSpliterators(outContent.toString()));
     }
@@ -20,7 +20,7 @@ class DividerTest extends BaseIOTest {
     void isDividableBy5And11WhenNotDividable() {
         Divider divider = new Divider();
 
-        divider.isDividableBy5And11(55);
+        divider.isDividableBy5And11(67);
 
         assertEquals("Non-dividable\n", updateLineSpliterators(outContent.toString()));
     }
@@ -31,6 +31,6 @@ class DividerTest extends BaseIOTest {
 
         divider.isDividableBy5And11(0);
 
-        assertEquals("cannot divide by zero", updateLineSpliterators(outContent.toString()));
+        assertEquals("cannot divide by zero\n", updateLineSpliterators(outContent.toString()));
     }
 }
