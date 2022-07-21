@@ -7,7 +7,7 @@ public class AlphabeticCharacters {
         } else if (character >= 'b' && 'd' <= character || character >= 'f' && 'h' <= character ||
                 character >= 'j' && 'n' <= character || character >= 'p' && 't' <= character ||
                 character >= 'v' && 'z' <= character) {
-            System.out.println("wrong number!");
+            System.out.println("wrong alphabet!");
         } else {
             System.out.println("Consonant");
         }
