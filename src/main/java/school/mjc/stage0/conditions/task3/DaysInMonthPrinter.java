@@ -4,9 +4,13 @@ public class DaysInMonthPrinter {
     public void amountOfDays(int month) {
         int Feb = 28;
         int June = 30;
-
-     if(month == Feb && month == June && month == 32){
-         System.out.println(Feb + June + "wrong number!");
-     }
+        if(month == Feb){
+         System.out.println(Feb);
+         if(month == June){
+             System.out.println(June);
+         }
+     }else{
+            System.out.println("wrong number!");
+        }
     }
 }
